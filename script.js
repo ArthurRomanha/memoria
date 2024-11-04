@@ -25,7 +25,7 @@ const cardValues = [balere, balere, cavorila, cavorila, galartixa, galartixa, mo
       const shuffledCards = shuffle(cardValues);
       shuffledCards.forEach((value) => {
         const card = document.createElement('img');
-        card.draggable = "false";
+        card.setAttribute("draggable", "false");
         card.classList.add('card');
         card.src = `./images/${value}`;
         card.addEventListener('click', flipCard);
