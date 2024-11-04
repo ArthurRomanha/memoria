@@ -1,5 +1,14 @@
 const balere = "balere.png";
-const cardValues = [balere, balere, "B", "B", "C", "C", "D", "D", "E", "E", "F", "F", "G", "G", "H", "H"];
+const cavorila = "cavorila.png";
+const galartixa = "galartixa.png";
+const morcegao = "morcegao.png";
+const peixePintado = "peixePintado.png";
+const polvelha = "polvelha.png";
+const rabra = "rabra.png";
+const tarturao = "tarturao.png";
+
+
+const cardValues = [balere, balere, cavorila, cavorila, galartixa, galartixa, morcegao, morcegao, peixePintado, peixePintado, polvelha, polvelha, rabra, rabra, tarturao, tarturao];
     const grid = document.getElementById('grid');
     const restartButton = document.createElement('button');
     restartButton.textContent = "Recomeçar";
@@ -39,7 +48,7 @@ const cardValues = [balere, balere, "B", "B", "C", "C", "D", "D", "E", "E", "F",
     }
 
     function checkMatch() {
-      const isMatch = firstCard.textContent === secondCard.textContent;
+      const isMatch = firstCard.src == secondCard.src;
 
       if (isMatch) {
         firstCard.classList.add('matched');
