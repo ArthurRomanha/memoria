@@ -17,7 +17,7 @@ const cardValues = [balere, balere, "B", "B", "C", "C", "D", "D", "E", "E", "F",
       shuffledCards.forEach((value) => {
         const card = document.createElement('img');
         card.classList.add('card');
-        card.src = `./images/${card.value}`;
+        card.src = `./images/${value}`;
         card.addEventListener('click', flipCard);
         grid.appendChild(card);
       });
