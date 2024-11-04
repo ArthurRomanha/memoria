@@ -1,4 +1,4 @@
-const balere = document.getElementById("balere");
+const balere = "balere.png";
 const cardValues = [balere, balere, "B", "B", "C", "C", "D", "D", "E", "E", "F", "F", "G", "G", "H", "H"];
     const grid = document.getElementById('grid');
     const restartButton = document.createElement('button');
