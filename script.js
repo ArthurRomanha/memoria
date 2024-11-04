@@ -1,4 +1,5 @@
-const cardValues = ["A", "A", "B", "B", "C", "C", "D", "D", "E", "E", "F", "F", "G", "G", "H", "H"];
+const balere = document.getElementById("balere")
+const cardValues = ["balere", "balere", "B", "B", "C", "C", "D", "D", "E", "E", "F", "F", "G", "G", "H", "H"];
     const grid = document.getElementById('grid');
     const restartButton = document.createElement('button');
     restartButton.textContent = "Recomeçar";
