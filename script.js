@@ -1,5 +1,5 @@
-const balere = document.getElementById("balere")
-const cardValues = ["balere", "balere", "B", "B", "C", "C", "D", "D", "E", "E", "F", "F", "G", "G", "H", "H"];
+const balere = document.getElementById("balere");
+const cardValues = [balere, balere, "B", "B", "C", "C", "D", "D", "E", "E", "F", "F", "G", "G", "H", "H"];
     const grid = document.getElementById('grid');
     const restartButton = document.createElement('button');
     restartButton.textContent = "Recomeçar";
@@ -15,8 +15,9 @@ const cardValues = ["balere", "balere", "B", "B", "C", "C", "D", "D", "E", "E", 
     function createBoard() {
       const shuffledCards = shuffle(cardValues);
       shuffledCards.forEach((value) => {
-        const card = document.createElement('div');
+        const card = document.createElement('img');
         card.classList.add('card');
+        card.style.src = `./images/${card.value}`;
         card.textContent = value;
         card.addEventListener('click', flipCard);
         grid.appendChild(card);
